@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.3.1
     version: 2.3.1(vue@3.4.26)
   '@sugarat/theme':
-    specifier: ^0.3.3
-    version: 0.3.3(@element-plus/icons-vue@2.3.1)(element-plus@2.7.2)(typescript@5.4.5)(vitepress@1.1.4)(vue@3.4.26)
+    specifier: ^0.3.6
+    version: 0.3.6(@element-plus/icons-vue@2.3.1)(element-plus@2.7.2)(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.1.4)(vue@3.4.26)
   element-plus:
     specifier: ^2.7.2
     version: 2.7.2(vue@3.4.26)
@@ -567,6 +567,46 @@ packages:
       fastq: 1.17.1
     dev: false
 
+  /@pagefind/darwin-arm64@1.1.0:
+    resolution: {integrity: sha512-SLsXNLtSilGZjvqis8sX42fBWsWAVkcDh1oerxwqbac84HbiwxpxOC2jm8hRwcR0Z55HPZPWO77XeRix/8GwTg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@pagefind/darwin-x64@1.1.0:
+    resolution: {integrity: sha512-QjQSE/L5oS1C8N8GdljGaWtjCBMgMtfrPAoiCmINTu9Y9dp0ggAyXvF8K7Qg3VyIMYJ6v8vg2PN7Z3b+AaAqUA==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@pagefind/linux-arm64@1.1.0:
+    resolution: {integrity: sha512-8zjYCa2BtNEL7KnXtysPtBELCyv5DSQ4yHeK/nsEq6w4ToAMTBl0K06khqxdSGgjMSwwrxvLzq3so0LC5Q14dA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@pagefind/linux-x64@1.1.0:
+    resolution: {integrity: sha512-4lsg6VB7A6PWTwaP8oSmXV4O9H0IHX7AlwTDcfyT+YJo/sPXOVjqycD5cdBgqNLfUk8B9bkWcTDCRmJbHrKeCw==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@pagefind/windows-x64@1.1.0:
+    resolution: {integrity: sha512-OboCM76BcMKT9IoSfZuFhiqMRgTde8x4qDDvKulFmycgiJrlL5WnIqBHJLQxZq+o2KyZpoHF97iwsGAm8c32sQ==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@rollup/rollup-android-arm-eabi@4.17.2:
     resolution: {integrity: sha512-NM0jFxY8bB8QLkoKxIQeObCaDlJKewVlIEkuyYKm5An1tdVZ966w2+MPQ2l8LBZLjR+SgyV+nRkTIunzOYBMLQ==}
     cpu: [arm]
@@ -696,8 +736,8 @@ packages:
     dependencies:
       shiki: 1.4.0
 
-  /@sugarat/theme@0.3.3(@element-plus/icons-vue@2.3.1)(element-plus@2.7.2)(typescript@5.4.5)(vitepress@1.1.4)(vue@3.4.26):
-    resolution: {integrity: sha512-aQg7eM32CZz49Xob3NAhs5+BxEoGHXxmjSst+pymg6fxUqjHtirJ7so71BZncdQ1yMi1J2Bh6sHMWgyZOWLoJA==}
+  /@sugarat/theme@0.3.6(@element-plus/icons-vue@2.3.1)(element-plus@2.7.2)(pagefind@1.1.0)(typescript@5.4.5)(vitepress@1.1.4)(vue@3.4.26):
+    resolution: {integrity: sha512-UfDNzEOAbHBQj96GFXlmA09tKRha5inExucEtBJ/ewapUyo9FFTdDwvfgn4Qt+uut8NDMF1UnLs3tF7WnfhtJw==}
     peerDependencies:
       '@element-plus/icons-vue': ^2.3.1
       element-plus: ^2.7
@@ -713,15 +753,16 @@ packages:
       gray-matter: 4.0.3
       markdown-it-task-checkbox: 1.0.6
       mermaid: 10.9.0
-      oh-my-live2d: 0.17.0
+      oh-my-live2d: 0.19.3
       swiper: 11.1.1
       vitepress-markdown-timeline: 1.2.1
       vitepress-plugin-mermaid: 2.0.13(mermaid@10.9.0)(vitepress@1.1.4)
-      vitepress-plugin-pagefind: 0.2.14(typescript@5.4.5)
-      vitepress-plugin-rss: 0.2.3(vitepress@1.1.4)
+      vitepress-plugin-pagefind: 0.3.3(pagefind@1.1.0)(typescript@5.4.5)
+      vitepress-plugin-rss: 0.2.6(vitepress@1.1.4)
       vitepress-plugin-tabs: 0.2.0(vitepress@1.1.4)(vue@3.4.26)
     transitivePeerDependencies:
       - '@vue/composition-api'
+      - pagefind
       - supports-color
       - typescript
       - vitepress
@@ -1917,6 +1958,7 @@ packages:
 
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -1964,11 +2006,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /highlight.js@11.9.0:
-    resolution: {integrity: sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==}
-    engines: {node: '>=12.0.0'}
-    dev: false
-
   /hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
 
@@ -2002,6 +2039,7 @@ packages:
 
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -2513,8 +2551,8 @@ packages:
     resolution: {integrity: sha512-Wj7+EJQ8mSuXr2iWfnujrimU35R2W4FAErEyTmJoJ7ucwTn2hOUSsRehMb5RSYkxXGTM7Y9QpvPmp++w5ftoJw==}
     dev: false
 
-  /oh-my-live2d@0.17.0:
-    resolution: {integrity: sha512-rsDCoGiHpCoEXTUxTkni5WJpdZwPMk4fT7wh56VlTue/9AAC+CiNR/VYVC3esIg4LtQqqcXb/5+PahXCFZC1yw==}
+  /oh-my-live2d@0.19.3:
+    resolution: {integrity: sha512-EWva8OUmcExIFIhqGkeiVPQt44RvYYFg+nmpkrZgQVQ+xofVFq4SDYAg5NcdK40HxyV4vORBJEg4OHIHP96MrA==}
     dev: false
 
   /once@1.4.0:
@@ -2547,6 +2585,17 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-limit: 3.1.0
+    dev: false
+
+  /pagefind@1.1.0:
+    resolution: {integrity: sha512-1nmj0/vfYcMxNEQj0YDRp6bTVv9hI7HLdPhK/vBBYlrnwjATndQvHyicj5Y7pUHrpCFZpFnLVQXIF829tpFmaw==}
+    hasBin: true
+    optionalDependencies:
+      '@pagefind/darwin-arm64': 1.1.0
+      '@pagefind/darwin-x64': 1.1.0
+      '@pagefind/linux-arm64': 1.1.0
+      '@pagefind/linux-x64': 1.1.0
+      '@pagefind/windows-x64': 1.1.0
     dev: false
 
   /parent-module@1.0.1:
@@ -2632,6 +2681,7 @@ packages:
 
   /rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
@@ -2940,15 +2990,17 @@ packages:
       '@mermaid-js/mermaid-mindmap': 9.3.0
     dev: false
 
-  /vitepress-plugin-pagefind@0.2.14(typescript@5.4.5):
-    resolution: {integrity: sha512-xwx3JtINalPNyMs4NHvgIbzZXwa3wIjj2d5E6+OWbV3FQu9lorHT34mazaDkJxKVdVs8rKucOuxpYLkR9aTYPA==}
+  /vitepress-plugin-pagefind@0.3.3(pagefind@1.1.0)(typescript@5.4.5):
+    resolution: {integrity: sha512-sko3JDj+2ig6czeeHH5ajAqzoIISgn2PATVC2PSvvL3PICU0grIBTrdfFthrfTdKLwcbcIQOBInbD7r5YbFl7Q==}
+    peerDependencies:
+      pagefind: ^1.1.0
     dependencies:
-      '@vue/shared': 3.4.26
       '@vueuse/core': 9.13.0(vue@3.4.26)
+      cross-spawn: 7.0.3
       fast-glob: 3.3.2
       gray-matter: 4.0.3
-      highlight.js: 11.9.0
       javascript-stringify: 2.1.0
+      pagefind: 1.1.0
       vue: 3.4.26(typescript@5.4.5)
       vue-command-palette: 0.1.4
     transitivePeerDependencies:
@@ -2956,11 +3008,12 @@ packages:
       - typescript
     dev: false
 
-  /vitepress-plugin-rss@0.2.3(vitepress@1.1.4):
-    resolution: {integrity: sha512-l93PL1Cq9P9R0z36VU+yyE+lJ+tBtxbCkrUe8+xxSj/o09FPnL3y7ECLL336BRr26yjj9EeR+MjxZznnSTKrUQ==}
+  /vitepress-plugin-rss@0.2.6(vitepress@1.1.4):
+    resolution: {integrity: sha512-Z1wDHaJer44dOTQrcd5VcJvwXdD5HCSPV5vsZqQ5FFpgMwap+VymtD0YWcajOOFWxLeoQS3T9vCv/V1SuP+r3Q==}
     peerDependencies:
       vitepress: ^1
     dependencies:
+      cross-spawn: 7.0.3
       fast-glob: 3.3.2
       feed: 4.2.2
       gray-matter: 4.0.3

@@ -18,5 +18,5 @@
 import BlogTheme from '@sugarat/theme'
 // 自定义样式重载
 import './style.scss'
-import './style.css'
+// import './style.css'
 export default BlogTheme

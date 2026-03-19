@@ -49,7 +49,6 @@ export default defineConfig({
     ],
 
   },
- 
   themeConfig: {
     algolia:{
       appId: 'EZO4X1FCLY',
@@ -96,10 +95,10 @@ export default defineConfig({
   }
     },
      /* 访客统计 */
-     visitor: {
-      /** 统计 id（单独页面的统计会作为前缀使用）*/
-      badgeId: 'maomao1996.vitepress-nav-template',
-    },
+    //  visitor: {
+    //   /** 统计 id（单独页面的统计会作为前缀使用）*/
+    //   badgeId: 'maomao1996.vitepress-nav-template',
+    // },
     // search: {
     //   provider: 'local'
     // },

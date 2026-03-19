@@ -1,5 +1,5 @@
 ---
-title: interview-(javascript)
+title: Javascript
 date: 2024-3-5
 isShowComments: true    
 categories:
@@ -8,7 +8,7 @@ tags:
  - interview
 sidebar: 'auto'
 ---
-# interview-(javascript)
+# Javascript
 ## js数据类型有哪些
 
    基本数据类型：
@@ -18,7 +18,8 @@ sidebar: 'auto'
    - object、array、function
 
    堆：存放引用数据类型，但是在栈中存放了引用数据类型的指针
-   堆：存放基本数据类型
+
+   栈：存放基本数据类型
 
 ## null和undefined的区别
 
@@ -493,7 +494,8 @@ sidebar: 'auto'
 
 ## 事件循环
 
-   - 由于JavaScript是一门单线程语言，会出现阻塞问题，所以出现了事件循环机制。JavaScript中的任务分为同步任务和异步任务，异步任务又分为微任务和宏任务，循环过程先执行同步任务，再执行异步任务，异步任务中会先执行一个宏任务再执行完所有微任务，接着再执行宏任务
+   - 由于JavaScript是一门单线程语言，会出现阻塞问题，所以出现了事件循环机制。JavaScript中的任务分为同步任务和异步任务，异步任务又分为微任务和宏任务
+   - 所有同步任务都在主线程上执行，形成执行栈，执行栈为空时会先检查微任务队列中是否有任务，如果有就将微任务队列中的所有任务依次执行，直到微任务队列为空，之后再检查宏任务队列中是否有宏任务如果有就取出第一个执行，之后再检查微任务队列，以此循环
 
    - 宏任务：script标签中的代码、定时器、I/O操作和UI渲染、DOM事件回调函数、AJAX请求回调函数
    - 微任务：promise.then方法、awati后面的代码、MutationObsever监听器的回调函数
@@ -599,3 +601,12 @@ sidebar: 'auto'
          return result
       }
    ```
+
+# js性能优化
+
+   - 减少DOM操作
+   - 避免循环引用
+   - 压缩代码
+   - 模块化增加可读性和可维护性
+   - 避免内存泄漏
+   - 异步化编程，合理使用promise、async/await，避免回调地狱

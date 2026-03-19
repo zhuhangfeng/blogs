@@ -1,5 +1,5 @@
 ---
-title: interview-(http)
+title: Http
 date: 2024-3-5
 isShowComments: true    
 categories:
@@ -8,7 +8,7 @@ tags:
  - interview
 sidebar: 'auto'
 ---
-# interview-(http)
+# Http
 ## https和http的区别
  
  - http属于明文传说协议，不安全，使用端口80

@@ -1,5 +1,5 @@
 ---
-title: interview-(vue)
+title: Vue
 date: 2024-3-5
 isShowComments: true
 categories:
@@ -9,7 +9,7 @@ tags:
 sidebar: 'auto'
 ---
 
-# interview-(vue)
+# Vue
 
 ## MVVM 的理解
 
